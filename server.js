@@ -2,6 +2,6 @@ var express = require('express');
 var app = express();
 
 
-app.use("/public", express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 app.listen(3000);
 console.log("server na porta 3000");
